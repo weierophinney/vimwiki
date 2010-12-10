@@ -241,10 +241,6 @@ highlight taskDoneItem guifg=#A8FF60 guibg=NONE gui=italic ctermfg=green ctermbg
 
 highlight taskWorkingIcon guifg=#FF6C60 guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NONE
 highlight taskDoneIcon guifg=#A8FF60 guibg=NONE gui=italic ctermfg=green ctermbg=NONE cterm=NONE
-
-syntax match sectionTitleLine "^.*:\s*$" contains=sectionTitle
-syntax match sectionTitle "\S.*:\s*$"
-highlight sectionTitle guifg=#96CBFE guibg=NONE gui=bold,underline ctermfg=blue ctermbg=NONE cterm=bold,underline
 "}}}
 
 let b:current_syntax="vimwiki"
