@@ -104,6 +104,14 @@ normal mode:
 <Tab> -- Find next wiki link
 <Shift-Tab> -- Find previous wiki link
 
+Vim-Task integration
+==============================================================================
+This version contains integration for users of vim-task. 
+
+* Headers end with a colon (“:”).
+* Pending (uncompleted) tasks start with a hyphen (“-”). Completed tasks start with a checkmark (“✓”).
+* Headers and tasks can be indented for grouping/hierarchy.
+* <Leader>-m toggles between complete/incomplete status.
 
 Commands
 ==============================================================================

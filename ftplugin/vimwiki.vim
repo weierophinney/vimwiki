@@ -371,6 +371,19 @@ noremap <silent><buffer> - :call vimwiki#RemoveHeaderLevel()<CR>
 
 " }}}
 
+" Task enhancements {{{
+function! Vimwiki_toggle_task_status()
+ruby << EOS
+  line = VIM::Buffer.current.line 
+  line = line.gsub(/^(\s*)([-✓])/u) { $1 + ( $2 == '-' ? '✓' : '-' ) }
+  VIM::Buffer.current.line = line 
+EOS
+endfunction
+
+inoremap <silent> <buffer> <Leader>m <ESC>:call Vimwiki_toggle_task_status()<CR>i
+noremap <silent> <buffer> <Leader>m :call Vimwiki_toggle_task_status()<CR>
+" }}}
+
 " KEYBINDINGS }}}
 
 " AUTOCOMMANDS {{{

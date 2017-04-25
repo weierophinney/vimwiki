@@ -38,11 +38,12 @@ CONTENTS                                                    *vimwiki-contents*
     8. Todo lists                    |vimwiki-todo-lists|
     9. Tables                        |vimwiki-tables|
     10. Diary                        |vimwiki-diary|
-    11. Options                      |vimwiki-options|
-    12. Help                         |vimwiki-help|
-    13. Developers                   |vimwiki-developers|
-    14. Changelog                    |vimwiki-changelog|
-    15. License                      |vimwiki-license|
+    11. Vim-Task integration         |vimwiki-vim-task|
+    12. Options                      |vimwiki-options|
+    13. Help                         |vimwiki-help|
+    14. Developers                   |vimwiki-developers|
+    15. Changelog                    |vimwiki-changelog|
+    16. License                      |vimwiki-license|
 
 
 ==============================================================================
@@ -947,7 +948,20 @@ See |g:vimwiki_use_calendar| option to turn it off/on.
 
 
 ==============================================================================
-11. Options                                                  *vimwiki-options*
+11. Vim-Task integration                                    *vimwiki-vim-task*
+
+Vim-Task (http://bit.ly/hxMhdW) is a dead-simple task management system.
+Incomplete tasks are preceded with a hyphen ("-"), and completed tasks are
+preceded with a checkmark (“✓”). Headers may optionally be present, and are
+lines ending with a colon (":"). Indentation and/or headers may be used to
+present groupings and/or hierarchy of tasks.
+
+To toggle task status (i.e., from incomplete to complete, or vice versa),
+<Leader>-m is used.
+
+
+==============================================================================
+12. Options                                                  *vimwiki-options*
 
 There are global and per wiki(local) options available to tune vimwiki.
 All global options are set using the following template: >
@@ -1617,7 +1631,7 @@ Default: 3
 
 
 ==============================================================================
-12. Help                                                        *vimwiki-help*
+13. Help                                                        *vimwiki-help*
 
 Your help in making vimwiki better is really appreciated!
 Any help. Would it be spell correction or code snippet to patch -- everything
@@ -1627,7 +1641,7 @@ Issues could be filled in at http://code.google.com/p/vimwiki/issues .
 
 
 ==============================================================================
-13. Developers                                            *vimwiki-developers*
+14. Developers                                            *vimwiki-developers*
 
     - Maxim Kim <habamax@gmail.com>
       Original author.
@@ -1648,7 +1662,7 @@ Maxim Kim.
 
 
 ==============================================================================
-14. Changelog                                              *vimwiki-changelog*
+15. Changelog                                              *vimwiki-changelog*
 
 1.1.1~
     * FIX: Issue 122: Dot character in vimwiki's directory path isn't escaped.
@@ -2117,7 +2131,7 @@ Maxim Kim.
     * First public version.
 
 ==============================================================================
-15. License                                                  *vimwiki-license*
+16. License                                                  *vimwiki-license*
 
 The MIT Licence
 http://www.opensource.org/licenses/mit-license.php
@@ -2142,6 +2156,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+Vim-Task integration Copyright (c) 2010 Matthew Weier O'Phinney
 
 
  vim:tw=78:ts=8:ft=help
